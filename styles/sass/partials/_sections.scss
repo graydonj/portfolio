@@ -1,0 +1,11 @@
+@use "./variables" as *;
+
+footer {
+  background-color: $secondary-bg;
+  padding: 20px;
+  margin-top: 20px;
+
+  h5 {
+    color: $secondary;
+  }
+}

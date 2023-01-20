@@ -1,14 +1,14 @@
 // Define the variables we'll be using:
 // Website Colours
-$primary: #C3DAB7;
-$secondary: #F6F6F6;
+$primary: #E98C00;
+$secondary: #FFC170;
+$primary-bg: #C4C6E7;
+$secondary-bg: #380574;
 $tertiary: #333333;
 
 // Bring in Google Fonts
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Spline+Sans+Mono&display=swap');
 
 // Website Fonts
-$header-font: Montserrat, sans-serif;
-$button-font: Montserrat, sans-serif;
-$nav-font: Montserrat, sans-serif;
-$body-font: Open Sans, sans-serif;
+$body-font: 'Roboto', sans-serif;
+$title-font: 'Spline Sans Mono', monospace;
