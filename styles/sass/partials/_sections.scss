@@ -9,3 +9,55 @@ footer {
     color: $secondary;
   }
 }
+
+section {
+  // border: 1px solid green;
+
+  h2 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    // border: 2px dotted grey;
+  }
+}
+
+.section-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  background-color: $secondary-bg;
+  color: $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: $secondary;
+  }
+}
+
+.skill-wrapper {
+  padding-bottom: 40px;
+  margin: auto;
+  width: 40%;
+  min-width: 480px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+    
+  i {
+    font-size: 3.5rem;
+  }
+}
+
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // border: 1px solid red;
+}

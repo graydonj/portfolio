@@ -222,6 +222,10 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-size: 125%;
+}
+
 h1,
 h2,
 h3,
@@ -254,4 +258,48 @@ footer {
 }
 footer h5 {
   color: #FFC170;
+}
+
+section h2 {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  background-color: #380574;
+  color: #FFC170;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills h2 {
+  color: #FFC170;
+}
+
+.skill-wrapper {
+  padding-bottom: 40px;
+  margin: auto;
+  width: 40%;
+  min-width: 480px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.skill-wrapper i {
+  font-size: 3.5rem;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
