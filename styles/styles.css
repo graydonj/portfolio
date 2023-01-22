@@ -232,21 +232,27 @@ h3,
 h4,
 h5 {
   font-family: "Spline Sans Mono", monospace;
-  display: inline;
   text-transform: lowercase;
-  color: #c57600;
+  color: #E05600;
 }
 
-p {
+h1 {
+  font-size: 4rem;
+}
+
+p,
+a {
   font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
 }
 
 .wrapper {
@@ -255,18 +261,21 @@ img {
   max-width: 1280px;
 }
 
-footer {
-  background-color: #380574;
-  padding: 20px;
-  margin-top: 20px;
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-footer h5 {
-  color: #FFC170;
-}
-
 section h2 {
   margin-top: 80px;
   margin-bottom: 40px;
+}
+
+header {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .section-heading {
@@ -277,22 +286,56 @@ section h2 {
 
 .header-bg {
   height: 50vh;
-  background-color: #C4C6E7;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), url("../assets/games-background.jpg");
+  background-color: #CCB8CB;
+  background-image: linear-gradient(rgba(236, 231, 238, 0.9), rgba(236, 231, 238, 0.8)), url("../assets/games-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
+.title h1 {
+  padding: 0;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+}
+.title .big {
+  font-size: 150%;
+}
+.title .underline {
+  text-decoration: underline;
+}
+.title .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-me {
+  background-color: #ece7ee;
+}
+.about-me .wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-me img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
 .skills {
-  background-color: #380574;
-  color: #FFC170;
+  background-color: #0A1045;
+  color: #FAE275;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.skills h2 {
-  color: #FFC170;
+.skills h2, .skills p {
+  color: #FAE275;
 }
 
 .skill-wrapper {
@@ -315,4 +358,43 @@ section h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.projects {
+  background-color: #ece7ee;
+}
+
+.projects-wrapper {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.project-item {
+  width: 44%;
+  background-color: white;
+}
+.project-item img {
+  width: 100%;
+  height: auto;
+}
+
+.project-text {
+  padding: 20px;
+}
+
+.contact {
+  background-color: #CCB8CB;
+}
+
+footer {
+  background-color: #0A1045;
+  padding: 20px;
+}
+footer h5 {
+  color: #FAE275;
 }
