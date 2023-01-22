@@ -26,6 +26,15 @@ section {
   align-items: center;
 }
 
+.header-bg {
+  height: 50vh;
+  background-color: $primary-bg;
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.5)), url("../assets/games-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
 .skills {
   background-color: $secondary-bg;
   color: $secondary;

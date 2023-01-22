@@ -234,7 +234,11 @@ h5 {
   font-family: "Spline Sans Mono", monospace;
   display: inline;
   text-transform: lowercase;
-  color: #E98C00;
+  color: #c57600;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -269,6 +273,15 @@ section h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header-bg {
+  height: 50vh;
+  background-color: #C4C6E7;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), url("../assets/games-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
 .skills {
