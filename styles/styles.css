@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Spline+Sans+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto&family=Spline+Sans+Mono&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -231,13 +231,27 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Spline Sans Mono", monospace;
+  font-family: "Libre Baskerville", monospace;
   text-transform: lowercase;
   color: #E05600;
 }
 
 h1 {
   font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }
 
 p,
@@ -286,7 +300,8 @@ header {
 
 .header-bg {
   height: 50vh;
-  background-color: #CCB8CB;
+  min-height: 420px;
+  background-color: #0A1045;
   background-image: linear-gradient(rgba(10, 16, 69, 0.85), rgba(10, 16, 69, 0.75)), url("../assets/games-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -298,8 +313,10 @@ header {
 
 .title h1 {
   padding: 0;
-  margin-top: 4vh;
-  margin-bottom: 1vh;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 1em;
+  text-align: center;
 }
 .title h1 div {
   text-decoration: underline;
@@ -308,7 +325,6 @@ header {
 .title h1 div::first-letter {
   font-size: 150%;
   text-decoration: none;
-  float: left;
 }
 .title .wrapper {
   display: flex;
@@ -394,6 +410,10 @@ header {
 .project-item img {
   width: 100%;
   height: auto;
+}
+.project-item h3 {
+  margin-top: 10px;
+  border: 5px double rgba(51, 51, 51, 0.2);
 }
 
 .project-text {

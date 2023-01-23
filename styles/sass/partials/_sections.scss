@@ -26,7 +26,8 @@ header {
 
 .header-bg {
   height: 50vh;
-  background-color: $primary-bg;
+  min-height: 420px;
+  background-color: $secondary-bg;
   background-image: linear-gradient(rgba($secondary-bg,0.85), rgba($secondary-bg,0.75)), url("../assets/games-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,18 +41,20 @@ header {
 .title {
   h1 {
     padding: 0;
-    margin-top: 4vh;
-    margin-bottom: 1vh;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    line-height: 1em;
+    text-align: center;
 
     div {
       text-decoration: underline;
       text-shadow: 1px 1px 1px $secondary;
     
       &::first-letter {
+        // margin-top: 1rem;
         font-size: 150%;
         text-decoration: none;
-        // text-shadow: 1px 1px 1px $secondary;
-        float: left;
+        // float: left;
       }
     }
   }
@@ -148,6 +151,11 @@ header {
   img {
     width: 100%;
     height: auto;
+  }
+
+  h3 {
+    margin-top: 10px;
+    border: 5px double rgba($tertiary, 0.2);
   }
 }
 
