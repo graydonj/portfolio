@@ -3,18 +3,16 @@
 section {
   padding-top: 40px;
   padding-bottom: 40px;
-  // border: 1px solid green;
 
   h2 {
-    margin-top: 80px;
-    margin-bottom: 40px;
-    // border: 2px dotted grey;
+    margin-bottom: 60px;
   }
 }
 
 header {
   width: 50%;
   margin: auto;
+  padding-top: 15px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -29,26 +27,33 @@ header {
 .header-bg {
   height: 50vh;
   background-color: $primary-bg;
-  // background-image: linear-gradient(rgba(200,200,200,0.7), rgba(200,200,200,0.5)), url("../assets/games-background.jpg");
-  background-image: linear-gradient(rgba(236,231,238, 0.9), rgba(236,231,238, 0.8)), url("../assets/games-background.jpg");
+  background-image: linear-gradient(rgba($secondary-bg,0.85), rgba($secondary-bg,0.75)), url("../assets/games-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+
+  p, a {
+    color: $secondary;
+  }
 }
 
 .title {
   h1 {
     padding: 0;
-    margin-top: 5vh;
+    margin-top: 4vh;
     margin-bottom: 1vh;
-  }
 
-  .big {
-    font-size: 150%;
-  }
-
-  .underline {
-    text-decoration: underline;
+    div {
+      text-decoration: underline;
+      text-shadow: 1px 1px 1px $secondary;
+    
+      &::first-letter {
+        font-size: 150%;
+        text-decoration: none;
+        // text-shadow: 1px 1px 1px $secondary;
+        float: left;
+      }
+    }
   }
 
   .wrapper {
@@ -74,6 +79,15 @@ header {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+  }
+
+  h2 {
+    margin: 10px;
+  }
+
+  p {
+    width: 50%;
+    text-align: center;
   }
 }
 

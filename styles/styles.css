@@ -266,13 +266,13 @@ section {
   padding-bottom: 40px;
 }
 section h2 {
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 header {
   width: 50%;
   margin: auto;
+  padding-top: 15px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -287,22 +287,28 @@ header {
 .header-bg {
   height: 50vh;
   background-color: #CCB8CB;
-  background-image: linear-gradient(rgba(236, 231, 238, 0.9), rgba(236, 231, 238, 0.8)), url("../assets/games-background.jpg");
+  background-image: linear-gradient(rgba(10, 16, 69, 0.85), rgba(10, 16, 69, 0.75)), url("../assets/games-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
+.header-bg p, .header-bg a {
+  color: #FAE275;
+}
 
 .title h1 {
   padding: 0;
-  margin-top: 5vh;
+  margin-top: 4vh;
   margin-bottom: 1vh;
 }
-.title .big {
-  font-size: 150%;
-}
-.title .underline {
+.title h1 div {
   text-decoration: underline;
+  text-shadow: 1px 1px 1px #FAE275;
+}
+.title h1 div::first-letter {
+  font-size: 150%;
+  text-decoration: none;
+  float: left;
 }
 .title .wrapper {
   display: flex;
@@ -325,6 +331,13 @@ header {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+.about-me h2 {
+  margin: 10px;
+}
+.about-me p {
+  width: 50%;
+  text-align: center;
 }
 
 .skills {
