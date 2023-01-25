@@ -40,10 +40,23 @@ a {
 }
 
 a {
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.85rem;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.5s ease;
+      
+  // This extends the line-through by one character on each side
+  &::before,
+  &::after {
+    content: '\00a0';
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration-color: $primary;
+  }
 }
 
 img {

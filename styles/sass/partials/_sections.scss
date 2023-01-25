@@ -23,10 +23,6 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-
-  p, a {
-    color: $secondary;
-  }
 }
 
 .title {
@@ -55,6 +51,31 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  p,
+  a {
+    color: $secondary;
+    padding-top: 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  a {
+    padding: 20px;
+    border: 5px solid rgba($tertiary-bg, 0.2);
+    background-color: transparent;
+    border-radius: 10px;
+    transition: background-color 0.5s ease, border 0.5s ease;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: $secondary;
+      border: 5px solid $secondary-bg;
+      background-color: $secondary-bg;
+    }
   }
 }
 
@@ -147,6 +168,22 @@ section {
   h3 {
     margin-top: 10px;
     border: 5px double rgba($tertiary, 0.2);
+  }
+
+  a {
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid rgba($tertiary-bg, 0.2);
+    background-color: transparent;
+    border-radius: 10px;
+    transition: background-color 0.5s ease, border 0.5s ease;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: $tertiary;
+      border: 5px solid $primary-bg;
+      background-color: $primary-bg;
+    }
   }
 }
 

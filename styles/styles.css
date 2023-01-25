@@ -263,10 +263,22 @@ a {
 }
 
 a {
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.85rem;
+  text-decoration: underline;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+  transition: -webkit-text-decoration-color 0.5s ease;
+  transition: text-decoration-color 0.5s ease;
+  transition: text-decoration-color 0.5s ease, -webkit-text-decoration-color 0.5s ease;
+}
+a::before, a::after {
+  content: " ";
+}
+a:hover, a:focus {
+  -webkit-text-decoration-color: #E05600;
+          text-decoration-color: #E05600;
 }
 
 img {
@@ -303,19 +315,6 @@ header .header .wrapper {
 header a {
   color: #E05600;
   padding: 10px 40px;
-  text-decoration: underline;
-  -webkit-text-decoration-color: transparent;
-          text-decoration-color: transparent;
-  transition: -webkit-text-decoration-color 0.5s ease;
-  transition: text-decoration-color 0.5s ease;
-  transition: text-decoration-color 0.5s ease, -webkit-text-decoration-color 0.5s ease;
-}
-header a::before, header a::after {
-  content: " ";
-}
-header a:hover, header a:focus {
-  -webkit-text-decoration-color: #E05600;
-          text-decoration-color: #E05600;
 }
 
 section {
@@ -341,9 +340,6 @@ section h2 {
   background-size: cover;
   background-position: bottom;
 }
-.title-bg p, .title-bg a {
-  color: #FAE275;
-}
 
 .title h1 {
   padding: 0;
@@ -365,6 +361,27 @@ section h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.title p,
+.title a {
+  color: #FAE275;
+  padding-top: 20px;
+}
+.title p {
+  font-size: 1.2rem;
+}
+.title a {
+  padding: 20px;
+  border: 5px solid rgba(174, 196, 218, 0.2);
+  background-color: transparent;
+  border-radius: 10px;
+  transition: background-color 0.5s ease, border 0.5s ease;
+}
+.title a:hover, .title a:focus {
+  -webkit-text-decoration-color: #FAE275;
+          text-decoration-color: #FAE275;
+  border: 5px solid #0A1045;
+  background-color: #0A1045;
 }
 
 .about-me {
@@ -448,6 +465,20 @@ section h2 {
 .project-item h3 {
   margin-top: 10px;
   border: 5px double rgba(51, 51, 51, 0.2);
+}
+.project-item a {
+  margin: 5px;
+  padding: 10px;
+  border: 5px solid rgba(174, 196, 218, 0.2);
+  background-color: transparent;
+  border-radius: 10px;
+  transition: background-color 0.5s ease, border 0.5s ease;
+}
+.project-item a:hover, .project-item a:focus {
+  -webkit-text-decoration-color: #333333;
+          text-decoration-color: #333333;
+  border: 5px solid #E7EDEE;
+  background-color: #E7EDEE;
 }
 
 .project-text {
