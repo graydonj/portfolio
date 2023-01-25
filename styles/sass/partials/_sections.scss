@@ -19,7 +19,7 @@ section {
   height: 60vh;
   min-height: 420px;
   background-color: $secondary-bg;
-  background-image: linear-gradient(rgba($secondary-bg,0.85), rgba($secondary-bg,0.75)), url("../assets/games-background.jpg");
+  background-image: linear-gradient(rgba($secondary-bg, 0.9), rgba($secondary-bg, 0.75)), url("../assets/games-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -59,7 +59,7 @@ section {
 }
 
 .about-me {
-  background-color: $tertiary-bg;
+  background-color: $primary-bg;
   
   .wrapper {
     margin: auto;
@@ -122,7 +122,7 @@ section {
 }
 
 .projects {
-  background-color: $tertiary-bg;
+  background-color: $primary-bg;
 }
 
 .projects-wrapper {
@@ -155,15 +155,5 @@ section {
 }
 
 .contact {
-  background-color: $primary-bg;
-}
-
-footer {
-  background-color: $secondary-bg;
-  padding: 20px;
-
-  h5 {
-    color: $secondary;
-    text-align: center;
-  }
+  background-color: $tertiary-bg;
 }
