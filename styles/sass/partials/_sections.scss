@@ -15,9 +15,55 @@ section {
   align-items: center;
 }
 
+/* Header/Nav styling */
+#mobile-menu {
+  display: none;
+}
+
+#mobile-menu-label {
+  position: fixed;
+  cursor: pointer;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  background: linear-gradient(
+    to bottom,
+    $primary, $primary 20%,
+    transparent 20%, transparent 40%,
+    $primary 40%, $primary 60%,
+    transparent 60%, transparent 80%,
+    $primary 80%, $primary 100%
+  );
+
+  .nav {
+    visibility: hidden;
+    position: fixed;
+    top: 0px;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    padding-top: 30px;
+    background-color: $secondary-bg;
+    z-index: 9;
+    transition: 0.5s;
+  }
+}
+
+#mobile-menu:checked + #mobile-menu-label .nav {
+  visibility: visible;
+  left: 0;
+}
+
+/* ********************* */
+/* TITLE section styling */
 .title-bg {
   height: 60vh;
-  min-height: 420px;
+  min-height: 520px;
   background-color: $secondary-bg;
   background-image: linear-gradient(rgba($secondary-bg, 0.9), rgba($secondary-bg, 0.75)), url("../assets/games-background.jpg");
   background-repeat: no-repeat;
@@ -61,6 +107,7 @@ section {
 
   p {
     font-size: 1.2rem;
+    text-align: center;
   }
 
   a {
@@ -79,6 +126,8 @@ section {
   }
 }
 
+/* ************************ */
+/* ABOUT ME section styling */
 .about-me {
   background-color: $primary-bg;
   
@@ -98,6 +147,7 @@ section {
 
   h2 {
     margin: 10px;
+    text-align: center;
   }
 
   p {
@@ -106,6 +156,8 @@ section {
   }
 }
 
+/* ********************** */
+/* SKILLS section styling */
 .skills {
   background-color: $secondary-bg;
   color: $secondary;
@@ -142,6 +194,8 @@ section {
   // border: 1px solid red;
 }
 
+/* ************************ */
+/* PROJECTS section styling */
 .projects {
   background-color: $primary-bg;
 }
@@ -157,7 +211,7 @@ section {
 }
 
 .project-item {
-  width: 44%;
+  width: 45%;
   background-color: white;
 
   img {
@@ -191,6 +245,41 @@ section {
   padding: 20px;
 }
 
+/* ************************** */
+/* CONTACT ME section styling */
 .contact {
   background-color: $tertiary-bg;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  i {
+    color: $tertiary;
+  }
+
+  a {
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 1s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $primary-bg;
+    }
+  }
+
+  p {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
