@@ -3,9 +3,23 @@
 section {
   padding-top: 40px;
   padding-bottom: 40px;
+  overflow: hidden;
 
   h2 {
     margin-bottom: 60px;
+  }
+
+  &:target {
+    animation: 1s slide-in;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translate(-20%,0);
+  }  
+  to {
+    transform: translate(0,0);
   }
 }
 
@@ -15,49 +29,6 @@ section {
   align-items: center;
 }
 
-/* Header/Nav styling */
-#mobile-menu {
-  display: none;
-}
-
-#mobile-menu-label {
-  position: fixed;
-  cursor: pointer;
-  top: 20px;
-  left: 20px;
-  width: 50px;
-  height: 50px;
-  display: none;
-  border: none;
-  padding: 0px;
-  margin: 0px;
-  background: linear-gradient(
-    to bottom,
-    $primary, $primary 20%,
-    transparent 20%, transparent 40%,
-    $primary 40%, $primary 60%,
-    transparent 60%, transparent 80%,
-    $primary 80%, $primary 100%
-  );
-
-  .nav {
-    visibility: hidden;
-    position: fixed;
-    top: 0px;
-    left: -250px;
-    width: 200px;
-    height: 100%;
-    padding-top: 30px;
-    background-color: $secondary-bg;
-    z-index: 9;
-    transition: 0.5s;
-  }
-}
-
-#mobile-menu:checked + #mobile-menu-label .nav {
-  visibility: visible;
-  left: 0;
-}
 
 /* ********************* */
 /* TITLE section styling */

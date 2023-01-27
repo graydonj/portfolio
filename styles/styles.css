@@ -317,20 +317,6 @@ header a {
   padding: 10px 40px;
 }
 
-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-section h2 {
-  margin-bottom: 60px;
-}
-
-.section-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Header/Nav styling */
 #mobile-menu {
   display: none;
@@ -365,6 +351,42 @@ section h2 {
 #mobile-menu:checked + #mobile-menu-label .nav {
   visibility: visible;
   left: 0;
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+section h2 {
+  margin-bottom: 60px;
+}
+section:target {
+  -webkit-animation: 1s slide-in;
+          animation: 1s slide-in;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    transform: translate(-20%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translate(-20%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+.section-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ********************* */
