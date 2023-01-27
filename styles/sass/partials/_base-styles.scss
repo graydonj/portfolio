@@ -1,0 +1,70 @@
+@use "./variables" as *;
+
+html {
+  font-size: 125%;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $title-font;
+  text-transform: lowercase;
+  color: $primary;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3, i {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+p,
+a {
+  font-family: $body-font;
+  color: $tertiary;
+}
+
+a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.5s ease;
+      
+  // This extends the line-through by one character on each side
+  &::before,
+  &::after {
+    content: '\00a0';
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration-color: $primary;
+  }
+}
+
+img {
+  object-fit: cover;
+}
+
+.wrapper {
+  margin: auto;
+  width: 90%;
+  max-width: 1280px;
+}

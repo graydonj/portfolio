@@ -1,26 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        h1 {
-            display: inline;
-            text-transform: uppercase;
-        }
-        img {
-            object-fit: cover;
-            width: 75px;
-            height: 75px;
-            border-radius: 50%;
-        }
-    </style>
-    <title>Graydon Games -- Board Game Design</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <script src="https://kit.fontawesome.com/734162beef.js" crossorigin="anonymous"></script>
+  
+
+  <!-- our stylesheet -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Graydon Games -- Web Development & Board Game Design</title>
 </head>
 <body>
-    <img src="graydonjames3.jpg" alt="Graydon James' mug shot">
-    <h1>Graydon Games</h1>
-    <p>Board game design goodness coming soon!</p>
+
+  <!-- HEADER MENU -->
+  <header>
+    <div class="header">
+    <div class="wrapper">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    </div>
+
+    <!-- MOBILE/HAMBURGER MENU -->
+    <!-- Modified from example by Warren Davies (https://alvarotrigo.com/blog/hamburger-menu-css-responsive/) -->
+    <input type="checkbox" id="mobile-menu" class="mobile-menu" />
+    <label for="mobile-menu" id="mobile-menu-label">
+      <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </label>
+  </header>
+
+  <!-- HERO TITLE -->
+  <!-- <div class="header-bg"> -->
+    <section class="title title-bg" id="home">
+      <div class="wrapper">
+        <h1><div>Graydon</div>
+          <div>Games</div></h1>
+        <p>Web Developer / Board Game Designer</p>
+        <a href="mailto:graydonj2@gmail.com" target="_blank" rel="noopener noreferrer">Contact Me</a>
+      </div>
+    </section>
+  <!-- </div> .header-bg END -->
+
+  <main>
+    <section class="about-me" id="about">
+      <div class="wrapper">
+        <img src="./assets/graydonjames3.jpg" alt="Graydon James' mug shot">
+        <div class="section-heading">
+          <h2>About Me</h2>
+        </div>
+        <p>My name is Graydon James and I'm a Toronto-based front-end web developer, board game designer, musician, and writer. That makes it sound like I have many widely disparate avenues of interest, but really they are all focused around one thing -- being creative!</p>
+        <p>I also have an appreciation for dad jokes. Maybe that was obvious.</p>
+      </div> <!-- .wrapper END -->
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills">
+      <div class="wrapper">
+        <div class="section-heading">
+          <h2>Skills</h2>
+        </div>
+        <div class="skill-wrapper">
+          <div class="skill-item">
+            <i class="devicon-html5-plain"></i>
+            <p>HTML</p>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-css3-plain"></i>
+            <p>CSS</p>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-sass-original"></i>
+            <p>SASS</p>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-javascript-plain"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-react-original"></i>
+            <p>React</p>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-firebase-plain"></i>
+            <p>Firebase</p>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-github-original"></i>
+            <p>Git/Github</p>
+          </div>
+        </div> <!-- .skill-wrapper END -->
+      </div> <!-- .wrapper END -->
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="wrapper">
+        <div class="section-heading">
+          <h2>Projects</h2>
+        </div>
+        <div class="projects-wrapper">
+          <div class="project-item">
+            <img src="./assets/snowfort-constructor.png" alt="Snow Fort Constructor app screenshot">
+            <div class="project-text">
+              <h3>Snow Fort Constructor</h3>
+              <h4>HTML, CSS, JavaScript</h4>
+              <p>An idle-clicker kind of game that lets you gather snow, buy tools (to gather snow), and add parts to your snow fort. Start with a pair of mittens and build up your snowy empire!</p>
+              <a href="https://snowfort-constructor.netlify.app/" target="_blank" rel="noopener noreferrer">View Live</a>
+              <a href="https://github.com/graydonj/snow-fort-constructor" target="_blank" rel="noopener noreferrer">View Code</a>
+            </div> <!-- .project-text END -->
+          </div>
+          <div class="project-item">
+            <img src="./assets/movie-matchmaker.png" alt="Movie Matchmaker app screenshot">
+            <div class="project-text">
+              <h3>Movie Matchmaker</h3>
+              <h4>HTML, CSS, SASS, JavaScript</h4>
+              <p>A "blind date with a movie"! Constructed using The Movie Database API with Haley Tibbits. Select a few details you want in your "date" and get matched with a movie! Get too picky, and you might end up with a movie no one wants to watch... You've been warned!</p>
+              <a href="https://moviematchmaker.netlify.app/" target="_blank" rel="noopener noreferrer">View Live</a>
+              <a href="https://github.com/haleytibbitts/movie-matchmaker" target="_blank" rel="noopener noreferrer">View Code</a>
+            </div> <!-- .project-text END -->
+          </div>
+        </div> <!-- .projects-wrapper END -->
+      </div> <!-- .wrapper END -->
+    </section> <!-- .projects END -->
+
+    <!-- CONTACT ME -->
+    <section class="contact" id="contact">
+      <div class="wrapper">
+        <div class="section-heading">
+          <h2>Contact</h2>
+        </div>
+        <div class="icons">
+          <a href="mailto:graydonj2@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/graydon-james/" target="_blank" rel="noopener noreferrer"><i class="devicon-linkedin-plain"></i></a>
+          <a href="https://github.com/graydonj" target="_blank" rel="noopener noreferrer"><i class="devicon-github-original"></i></a>
+        </div>
+        <p>Get in touch if you have a creative project that needs a fresh perspective, or if you have a board game idea that's been taking up space in your brain for far too long!</p>
+      </div> <!-- .wrapper END -->
+    </section> <!-- .contact END -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrapper">
+      <h5>Carefully constructed by graydon james in 2023</h5>
+    </div> <!-- .wrapper END -->
+  </footer>
 </body>
 </html>

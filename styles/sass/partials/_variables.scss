@@ -1,0 +1,17 @@
+// Define the variables we'll be using:
+// Website Colours
+$primary: #E05600;
+$secondary: #FAE275;
+$tertiary: #333333;
+$quaternary: #EEEEEE;
+$primary-bg: #E7EDEE;
+$secondary-bg: #0A1045;
+$tertiary-bg: #AEC4DA;
+
+
+// Bring in Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto&family=Spline+Sans+Mono&display=swap');
+
+// Website Fonts
+$body-font: 'Roboto', sans-serif;
+$title-font: 'Libre Baskerville', monospace;

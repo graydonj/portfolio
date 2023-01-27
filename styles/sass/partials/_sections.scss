@@ -1,0 +1,285 @@
+@use "./variables" as *;
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  h2 {
+    margin-bottom: 60px;
+  }
+}
+
+.section-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header/Nav styling */
+#mobile-menu {
+  display: none;
+}
+
+#mobile-menu-label {
+  position: fixed;
+  cursor: pointer;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  background: linear-gradient(
+    to bottom,
+    $primary, $primary 20%,
+    transparent 20%, transparent 40%,
+    $primary 40%, $primary 60%,
+    transparent 60%, transparent 80%,
+    $primary 80%, $primary 100%
+  );
+
+  .nav {
+    visibility: hidden;
+    position: fixed;
+    top: 0px;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    padding-top: 30px;
+    background-color: $secondary-bg;
+    z-index: 9;
+    transition: 0.5s;
+  }
+}
+
+#mobile-menu:checked + #mobile-menu-label .nav {
+  visibility: visible;
+  left: 0;
+}
+
+/* ********************* */
+/* TITLE section styling */
+.title-bg {
+  height: 60vh;
+  min-height: 520px;
+  background-color: $secondary-bg;
+  background-image: linear-gradient(rgba($secondary-bg, 0.9), rgba($secondary-bg, 0.75)), url("../assets/games-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.title {
+  h1 {
+    padding: 0;
+    margin-top: 10vh;
+    margin-bottom: 20px;
+    line-height: 1em;
+    text-align: center;
+
+    div {
+      text-decoration: underline;
+      text-shadow: 1px 1px 1px $secondary;
+    
+      &::first-letter {
+        // margin-top: 1rem;
+        font-size: 150%;
+        text-decoration: none;
+        // float: left;
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  p,
+  a {
+    color: $secondary;
+    padding-top: 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  a {
+    padding: 20px;
+    border: 5px solid rgba($tertiary-bg, 0.2);
+    background-color: transparent;
+    border-radius: 10px;
+    transition: background-color 0.5s ease, border 0.5s ease;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: $secondary;
+      border: 5px solid $secondary-bg;
+      background-color: $secondary-bg;
+    }
+  }
+}
+
+/* ************************ */
+/* ABOUT ME section styling */
+.about-me {
+  background-color: $primary-bg;
+  
+  .wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  h2 {
+    margin: 10px;
+    text-align: center;
+  }
+
+  p {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+/* ********************** */
+/* SKILLS section styling */
+.skills {
+  background-color: $secondary-bg;
+  color: $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2, p {
+    color: $secondary;
+  }
+}
+
+.skill-wrapper {
+  padding-bottom: 40px;
+  margin: auto;
+  width: 40%;
+  min-width: 480px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+    
+  i {
+    font-size: 3.5rem;
+  }
+}
+
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // border: 1px solid red;
+}
+
+/* ************************ */
+/* PROJECTS section styling */
+.projects {
+  background-color: $primary-bg;
+}
+
+.projects-wrapper {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.project-item {
+  width: 45%;
+  background-color: white;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h3 {
+    margin-top: 10px;
+    border: 5px double rgba($tertiary, 0.2);
+  }
+
+  a {
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid rgba($tertiary-bg, 0.2);
+    background-color: transparent;
+    border-radius: 10px;
+    transition: background-color 0.5s ease, border 0.5s ease;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: $tertiary;
+      border: 5px solid $primary-bg;
+      background-color: $primary-bg;
+    }
+  }
+}
+
+.project-text {
+  padding: 20px;
+}
+
+/* ************************** */
+/* CONTACT ME section styling */
+.contact {
+  background-color: $tertiary-bg;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  i {
+    color: $tertiary;
+  }
+
+  a {
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 1s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $primary-bg;
+    }
+  }
+
+  p {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
