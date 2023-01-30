@@ -18,25 +18,25 @@
 
   <!-- HEADER MENU -->
   <header>
-    <div class="header">
-    <div class="wrapper">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-    </div>
-
-    <!-- MOBILE/HAMBURGER MENU -->
-    <!-- Modified from example by Warren Davies (https://alvarotrigo.com/blog/hamburger-menu-css-responsive/) -->
-    <input type="checkbox" id="mobile-menu" class="mobile-menu" />
-    <label for="mobile-menu" id="mobile-menu-label">
-      <div class="nav">
+    <nav class="header" role="navigation">
+      <div class="wrapper">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
+    </nav>
+
+    <!-- MOBILE/HAMBURGER MENU -->
+    <!-- Modified from example by Warren Davies (https://alvarotrigo.com/blog/hamburger-menu-css-responsive/) -->
+    <input type="checkbox" id="mobile-menu" class="mobile-menu" />
+    <label for="mobile-menu" id="mobile-menu-label">
+      <nav class="nav" role="navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </label>
   </header>
 
@@ -72,31 +72,31 @@
         </div>
         <div class="skill-wrapper">
           <div class="skill-item">
-            <i class="devicon-html5-plain"></i>
+            <i class="devicon-html5-plain" aria-hidden="true" title="HTML"></i>
             <p>HTML</p>
           </div>
           <div class="skill-item">
-            <i class="devicon-css3-plain"></i>
+            <i class="devicon-css3-plain" aria-hidden="true" title="CSS"></i>
             <p>CSS</p>
           </div>
           <div class="skill-item">
-            <i class="devicon-sass-original"></i>
+            <i class="devicon-sass-original" aria-hidden="true" title="SASS"></i>
             <p>SASS</p>
           </div>
           <div class="skill-item">
-            <i class="devicon-javascript-plain"></i>
+            <i class="devicon-javascript-plain" aria-hidden="true" title="JavaScript"></i>
             <p>JavaScript</p>
           </div>
           <div class="skill-item">
-            <i class="devicon-react-original"></i>
+            <i class="devicon-react-original" aria-hidden="true" title="React"></i>
             <p>React</p>
           </div>
           <div class="skill-item">
-            <i class="devicon-firebase-plain"></i>
+            <i class="devicon-firebase-plain" aria-hidden="true" title="Firebase"></i>
             <p>Firebase</p>
           </div>
           <div class="skill-item">
-            <i class="devicon-github-original"></i>
+            <i class="devicon-github-original" aria-hidden="true" title="Git/Github"></i>
             <p>Git/Github</p>
           </div>
         </div> <!-- .skill-wrapper END -->
@@ -141,9 +141,18 @@
           <h2>Contact</h2>
         </div>
         <div class="icons">
-          <a href="mailto:graydonj2@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/graydon-james/" target="_blank" rel="noopener noreferrer"><i class="devicon-linkedin-plain"></i></a>
-          <a href="https://github.com/graydonj" target="_blank" rel="noopener noreferrer"><i class="devicon-github-original"></i></a>
+          <a href="mailto:graydonj2@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa-regular fa-envelope" aria-hidden="true" title="E-mail Graydon"></i>
+            <span class="fa-sr-only fa-sr-only-focusable">E-mail Graydon</span>
+          </a>
+          <a href="https://www.linkedin.com/in/graydon-james/" target="_blank" rel="noopener noreferrer">
+            <i class="devicon-linkedin-plain" aria-hidden="true" title="Graydon's LinkedIn Profile"></i>
+            <span class="fa-sr-only fa-sr-only-focusable">Graydon's LinkedIn Profile</span>
+          </a>
+          <a href="https://github.com/graydonj" target="_blank" rel="noopener noreferrer">
+            <i class="devicon-github-original" aria-hidden="true" title="Graydon's GitHub Profile"></i>
+            <span class="fa-sr-only fa-sr-only-focusable">Graydon's GitHub Profile</span>
+          </a>
         </div>
         <p>Get in touch if you have a creative project that needs a fresh perspective, or if you have a board game idea that's been taking up space in your brain for far too long!</p>
       </div> <!-- .wrapper END -->

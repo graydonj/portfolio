@@ -28,7 +28,7 @@ header {
   }
 }
 
-/* Header/Nav styling */
+/* mobile menu nav styling */
 #mobile-menu {
   display: none;
 }
@@ -62,6 +62,11 @@ header {
     background-color: $secondary-bg;
     z-index: 9;
     transition: 0.5s;
+
+    a {
+      line-height: 1.75;
+      font-size: 1rem;
+    }
   }
 }
 
