@@ -184,6 +184,9 @@ section {
 .project-item {
   width: 45%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
   img {
     width: 100%;
@@ -196,7 +199,8 @@ section {
   }
 
   a {
-    margin: 5px;
+    display: inline-block;
+    margin-right: 5px;
     padding: 10px;
     border: 5px solid rgba($tertiary-bg, 0.2);
     background-color: transparent;
@@ -214,6 +218,25 @@ section {
 
 .project-text {
   padding: 20px;
+
+  p {
+    a {
+      margin: 0px;
+      padding: 0px;
+      border: none;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        border: none;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+      }
+    }
+  }
 }
 
 /* ************************** */
