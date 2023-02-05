@@ -1,5 +1,13 @@
 @use "./variables" as *;
 
+@media (prefers-reduced-motion) {
+  section {
+    &:target {
+      animation: 0s slide-in;
+    }
+  }
+}
+
 @media (max-width: 1300px) {
 }
 

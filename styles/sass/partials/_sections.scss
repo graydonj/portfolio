@@ -10,13 +10,13 @@ section {
   }
 
   &:target {
-    animation: 1s slide-in;
+    animation: 0.5s slide-in;
   }
 }
 
 @keyframes slide-in {
   from {
-    transform: translate(-20%,0);
+    transform: translate(-30%,0);
   }  
   to {
     transform: translate(0,0);
@@ -33,7 +33,7 @@ section {
 /* ********************* */
 /* TITLE section styling */
 .title-bg {
-  height: 60vh;
+  height: 85vh;
   min-height: 520px;
   background-color: $secondary-bg;
   background-image: linear-gradient(rgba($secondary-bg, 0.9), rgba($secondary-bg, 0.75)), url("../assets/games-background.jpg");
@@ -45,9 +45,10 @@ section {
 .title {
   h1 {
     padding: 0;
-    margin-top: 10vh;
-    margin-bottom: 20px;
+    margin-top: 15vh;
+    margin-bottom: 40px;
     line-height: 1em;
+    letter-spacing: 0.2rem;
     text-align: center;
 
     div {
@@ -55,10 +56,8 @@ section {
       text-shadow: 1px 1px 1px $secondary;
     
       &::first-letter {
-        // margin-top: 1rem;
         font-size: 150%;
         text-decoration: none;
-        // float: left;
       }
     }
   }
@@ -79,6 +78,36 @@ section {
   p {
     font-size: 1.2rem;
     text-align: center;
+    padding-bottom: 20px;
+
+    span {
+      animation: 4s glow-across infinite;
+      animation-delay: calc(0.05s * var(--i));
+    }
+
+    @keyframes glow-across {
+      0% {
+        text-shadow: $primary 0px 0px 10px,
+        $primary 0px 0px 18px,
+        $primary 0px 0px 25px;
+      }
+  
+      50% {
+        text-shadow: $primary 0px 0px 30px,
+        $primary 0px 0px 60px,
+        $primary 0px 0px 90px,
+        $primary 0px 0px 120px,
+        $primary 0px 0px 150px,
+        $primary 0px 0px 180px,
+        $primary 0px 0px 210px;
+      }
+
+      100% {
+        text-shadow: $primary 0px 0px 10px,
+        $primary 0px 0px 20px,
+        $primary 0px 0px 30px;
+      }
+    }
   }
 
   a {
@@ -111,13 +140,15 @@ section {
   }
 
   img {
+    margin-top: 40px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
   }
 
   h2 {
-    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 10px;
     text-align: center;
   }
 
@@ -162,13 +193,13 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  // border: 1px solid red;
 }
 
 /* ************************ */
 /* PROJECTS section styling */
 .projects {
   background-color: $primary-bg;
+  padding-bottom: 80px;
 }
 
 .projects-wrapper {
@@ -184,18 +215,31 @@ section {
 .project-item {
   width: 45%;
   background-color: white;
+  box-shadow: 5px 5px 5px $tertiary;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  transition: box-shadow 0.5s ease;
+
+  &:hover,
+  &:focus {
+    box-shadow: 15px 15px 15px $tertiary;
+  }
 
   img {
     width: 100%;
     height: auto;
+    max-height: 300px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   h3 {
     margin-top: 10px;
     border: 5px double rgba($tertiary, 0.2);
+    border-radius: 10px;
   }
 
   a {
