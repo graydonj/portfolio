@@ -268,18 +268,14 @@ a {
   font-weight: bold;
   font-size: 0.85rem;
   text-decoration: underline;
-  -webkit-text-decoration-color: transparent;
-          text-decoration-color: transparent;
-  transition: -webkit-text-decoration-color 0.5s ease;
+  text-decoration-color: transparent;
   transition: text-decoration-color 0.5s ease;
-  transition: text-decoration-color 0.5s ease, -webkit-text-decoration-color 0.5s ease;
 }
 a::before, a::after {
   content: " ";
 }
 a:hover, a:focus {
-  -webkit-text-decoration-color: #E05600;
-          text-decoration-color: #E05600;
+  text-decoration-color: #E05600;
 }
 
 img {
@@ -376,17 +372,7 @@ section h2 {
   margin-bottom: 60px;
 }
 section:target {
-  -webkit-animation: 0.5s slide-in;
-          animation: 0.5s slide-in;
-}
-
-@-webkit-keyframes slide-in {
-  from {
-    transform: translate(-30%, 0);
-  }
-  to {
-    transform: translate(0, 0);
-  }
+  animation: 0.5s slide-in;
 }
 
 @keyframes slide-in {
@@ -448,21 +434,8 @@ section:target {
   padding-bottom: 20px;
 }
 .title p span {
-  -webkit-animation: 4s glow-across infinite;
-          animation: 4s glow-across infinite;
-  -webkit-animation-delay: calc(0.05s * var(--i));
-          animation-delay: calc(0.05s * var(--i));
-}
-@-webkit-keyframes glow-across {
-  0% {
-    text-shadow: #E05600 0px 0px 10px, #E05600 0px 0px 18px, #E05600 0px 0px 25px;
-  }
-  50% {
-    text-shadow: #E05600 0px 0px 30px, #E05600 0px 0px 60px, #E05600 0px 0px 90px, #E05600 0px 0px 120px, #E05600 0px 0px 150px, #E05600 0px 0px 180px, #E05600 0px 0px 210px;
-  }
-  100% {
-    text-shadow: #E05600 0px 0px 10px, #E05600 0px 0px 20px, #E05600 0px 0px 30px;
-  }
+  animation: 4s glow-across infinite;
+  animation-delay: calc(0.05s * var(--i));
 }
 @keyframes glow-across {
   0% {
@@ -483,8 +456,7 @@ section:target {
   transition: background-color 0.5s ease, border 0.5s ease;
 }
 .title a:hover, .title a:focus {
-  -webkit-text-decoration-color: #FAE275;
-          text-decoration-color: #FAE275;
+  text-decoration-color: #FAE275;
   border: 5px solid #0A1045;
   background-color: #0A1045;
 }
@@ -571,6 +543,7 @@ section:target {
 
 .project-item {
   width: 45%;
+  margin-bottom: 40px;
   background-color: white;
   box-shadow: 5px 5px 5px #333333;
   border-radius: 20px;
@@ -605,8 +578,7 @@ section:target {
   transition: background-color 0.5s ease, border 0.5s ease;
 }
 .project-item a:hover, .project-item a:focus {
-  -webkit-text-decoration-color: #333333;
-          text-decoration-color: #333333;
+  text-decoration-color: #333333;
   border: 5px solid #E7EDEE;
   background-color: #E7EDEE;
 }
@@ -683,8 +655,7 @@ footer a::after {
 
 @media (prefers-reduced-motion) {
   section:target {
-    -webkit-animation: 0s slide-in;
-            animation: 0s slide-in;
+    animation: 0s slide-in;
   }
 }
 @media (max-width: 1100px) {
