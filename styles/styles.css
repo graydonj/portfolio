@@ -298,6 +298,7 @@ header .header {
   height: 60px;
   background-color: #0A1045;
   background-color: rgba(10, 16, 69, 0.9);
+  filter: drop-shadow(0px 5px 5px #333333);
   position: fixed;
 }
 header .header .wrapper {
@@ -450,7 +451,7 @@ section:target {
 }
 .title a {
   padding: 20px;
-  border: 5px solid rgba(182, 201, 236, 0.2);
+  border: 5px solid rgba(185, 218, 255, 0.2);
   background-color: transparent;
   border-radius: 10px;
   transition: background-color 0.5s ease, border 0.5s ease;
@@ -572,7 +573,7 @@ section:target {
   display: inline-block;
   margin-right: 5px;
   padding: 10px;
-  border: 5px solid rgba(182, 201, 236, 0.2);
+  border: 5px solid rgba(185, 218, 255, 0.2);
   background-color: transparent;
   border-radius: 10px;
   transition: background-color 0.5s ease, border 0.5s ease;
@@ -602,7 +603,7 @@ section:target {
 /* ************************** */
 /* CONTACT ME section styling */
 .contact {
-  background-color: #b6c9ec;
+  background-color: rgba(185, 218, 255, 0.862745098);
   text-align: center;
 }
 .contact h2 {
@@ -726,6 +727,6 @@ footer a::after {
     font-size: 0.7rem;
     margin: 0px;
     padding: 5px;
-    border: 2px solid rgba(182, 201, 236, 0.2);
+    border: 2px solid rgba(185, 218, 255, 0.2);
   }
 }
